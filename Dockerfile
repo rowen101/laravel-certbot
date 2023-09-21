@@ -23,7 +23,7 @@ COPY . .
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install Laravel dependencies
-RUN composer install
+# RUN composer install
 
 # Expose port 9000 to communicate with the Nginx container
 EXPOSE 9000
