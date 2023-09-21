@@ -46,7 +46,7 @@ services:
 
   certbot:
     image: certbot/certbot
-    command: certonly --webroot --webroot-path=/var/www/html/public -d your_domain.com
+    command: certonly --webroot --webroot-path=/var/www/html/public -d safesxpress.com
     volumes:
       - ./certbot/etc:/etc/letsencrypt
       - ./certbot/var:/var/lib/letsencrypt
